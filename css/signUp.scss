@@ -1,0 +1,65 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+/* font-family: 'Open Sans', sans-serif; */
+
+
+#header { height: 100px; background: #000; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;}
+
+#wrap { margin: 100px auto 200px;
+    text-align: center; font-size: 18px;
+    h2 {
+        font-size: 50px; font-weight: bold; 
+        font-family: 'Mukta', sans-serif; 
+        margin-bottom: 40px;
+    }
+    input {width: 100%; padding: 15px; border:1px solid #ddd;
+        margin-top:5px;
+        &:focus {outline: none; border: 1px solid #000;}
+    }
+    .joinbox {width: 600px; margin: 0 auto;
+        fieldset:nth-child(1) {
+            .personal { margin: 40px 0 70px;
+                .email {display: flex; flex-wrap: wrap; justify-content: space-between;
+                    #mailID {flex: 0 1 47%}
+                    span {font-size: 20px; align-self: center;}
+                    #mailname {flex: 0 1 47%; font-size: 18px; border: 1px solid #ddd; margin-top: 5px;
+                        &:focus {outline: none; border: 1px solid #000;}
+                    }
+                }
+            }
+        }
+        
+        fieldset:nth-child(2) { font-size: 16px;
+            input {width: auto;}
+            h3 {text-align: start;}
+            .checkall {display: flex;  border-bottom: 1px solid #ddd;
+                margin-bottom: 30px; padding: 7px 0;
+                span {margin-right: 5px;}
+            }
+            .check {
+                padding: 20px 0;
+                &:last-child {
+                    margin-bottom: 50px;
+                }
+                .terms {
+                    .content {
+                        height: 100px; border: 1px solid #ddd;
+                        overflow: hidden; overflow-y: scroll;
+                        margin: 5px 0; padding: 5px 10px;
+                    }
+                    p {text-align: end;
+                        span {margin-right: 5px;}
+                    }
+                }
+
+            }
+            
+        }
+        button {margin: 40px 0 20px;
+            width: 100%; border: none; padding: 15px;
+            font-size: 22px; background: #d1d0cd; color: #000;
+            &:hover {background: #070707; color: #fff;}
+        }
+    }
+    
+}

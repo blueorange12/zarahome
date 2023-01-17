@@ -1,0 +1,59 @@
+@charset "uft-8";
+
+@media screen and (max-width:1680px) {
+  #footer .zplus {flex: 1 1 15%; padding: 0 50px;}
+  #footer .info {flex: 1 1 30%; padding-left: 50px;}
+  #footer .contact {flex: 1 2 35% ;}
+  #footer .contact .sns a {margin:0 5px;}
+}
+
+@media screen and (max-width:1024px) {
+  
+  /* 헤더 구역 */
+  #gotop {bottom: 110px;}
+  #gotop a {width: 40px; height: 40px; line-height: 40px;}
+  #chat a {width: 40px;}
+  #header .logo img {width: 250px;}
+  #header .submenu {font-size: 15px;}
+  #header .submenu a {padding: 5px 15px;}
+  #header .search {right: 150px;}
+  /* #header .search.on #sbox {opacity: 0;} */
+
+  
+  /* 푸터 */
+  #footer .zplus {order:2; flex: 1 1 20%;}
+  #footer .contact {order:1; flex: 1 1 80%; margin: 0px 0 150px;}
+  #footer .contact input {width: 80%;}
+  #footer .info {order:3; flex: 1 1 40%}
+
+
+  /* #footer .zplus {display: none;}
+  #footer .contact {width: 40%;}
+  #footer .contact .sns a {
+    width: 25px; height: 25px; line-height: 25px; 
+    font-size: 15px; margin: 0 3px;
+  }
+  #footer .company span {display: block;} */
+
+}
+
+
+
+@media screen and (max-width:768px) {
+  #header .top_menu {background: rgb(16, 16, 16)}
+  #header .logo a img {width: 300px;}
+  #header .opennav {display: none;}
+  #header .submenu {display: none;}
+  #appMenu {opacity: 1;}
+
+  #chat {display: none;}
+
+  #footer .contact {flex: 1 1 100%; margin: 0px 0 80px;}
+  #footer .contact .sns {display: none;}
+  #footer .zplus {display: none;}
+  #footer .info {display: none;}
+}
+
+@media screen and (max-width:480px) {
+  #footer .contact {margin: 0px 0 30px;}
+}

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입::자라홈</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/signUp.css">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="wrap">
+            <div class="top_menu">
+                <div class="opennav">
+                    <div class="home">
+                        <a href="./index.html"><i class="fa-solid fa-house"></i></a>
+                    </div>
+                </div>
+                <div class="logo">
+                    <h1>
+                        <div class="logoImage" onclick="location.href='./index.html'"></div>
+                    </h1>
+                </div>
+
+                <div class="submenu">
+                    <div class="search">
+                        <span class="blind">검색어를 입력하세요.</span>
+                        <input type="search" id="sbox">
+                        <label for="sbox"><i class="fa-solid fa-magnifying-glass"></i></label>
+                    </div>
+                    <div class="login">
+                        <a href="./login.html"><i class="fa-solid fa-user"></i></a>
+                    </div>
+                    <div class="favorites">
+                        <a href="#"><i class="fa-solid fa-heart"></i></a>
+                    </div>
+                    <div class="shopping">
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="appMenu">
+                <a href="#"><i class="fa-solid fa-bars"></i></a>
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#"><i class="fa-solid fa-house"></i></a>
+                <a href="#"><i class="fa-solid fa-heart"></i></a>
+                <a href="./login.html"><i class="fa-solid fa-user"></i></a>
+            </div>
+
+        </div>
+    </header>
+
+    <div id="chat">
+        <a href="#"><img src="./img/chat-icon-transparente.svg" alt="채팅"></a>
+    </div>
+
+
+
+
+    <div id="wrap">
+        <h2>Members</h2>
+        <div class="joinbox">
+            <form action="#" method="post" autocomplete="off" id="form">
+                <fieldset>
+                    <div class="idpw">
+                        <p><input type="text" placeholder="아이디" id="id" required></p>
+                        <p><input type="password" placeholder="비밀번호" id="pw" required></p>
+                        <p><input type="password" placeholder="비밀번호 확인" id="pwok" required></p>
+                    </div>
+
+                    <div class="personal">
+                        <p><input type="text" placeholder="이름"></p>
+                        <p class="email">
+                            <input type="text" placeholder="이메일" id="mailID">
+                            <span>@</span>
+                            <select id="mailname">
+                                <option value="noselect">선택</option>
+                                <option value="gmail.com">gmail.com</option>
+                                <option value="naver.com">naver.com</option>
+                                <option value="daum.net">daum.net</option>
+                                <!-- <option value="self">직접입력</option> -->
+                            </select>
+                        </p>
+                        <p><input type="text" id="phone" placeholder="휴대폰번호"></p>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="checkall">
+                        <span>전체 동의</span>
+                        <label for="all">
+                            <input type="checkbox" id="all">
+                        </label>
+                    </div>
+
+                    <div class="check">
+                        <h3>이용약관 동의</h3>
+                        <div class="terms">
+                            <div class="content">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, iure? Fuga,
+                                voluptates? Alias at, nobis dolor sunt quae expedita, harum cupiditate dolorem minima,
+                                inventore molestiae fugiat eum temporibus soluta perferendis!
+                                Deleniti nobis quasi ut, vero molestias officiis veniam placeat facere fugit praesentium
+                                quas quos cum adipisci unde voluptates! Rem illo soluta ratione minus, dolor excepturi
+                                odit at ab magnam sapiente?
+                                Officia rerum odio beatae ab eius sint sunt illum, recusandae illo totam nostrum facilis
+                                quae porro architecto magni, praesentium veritatis dolore eum necessitatibus ducimus
+                                culpa. Temporibus nobis assumenda iste veniam.
+                            </div>
+                            <p>
+                                <span>이용약관에 동의 하십니까?</span>
+                                <label for="use"><input type="checkbox" id="use" required>동의</label>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="check">
+                        <h3>개인정보 수집 및 이용 동의</h3>
+                        <div class="terms">
+                            <div class="content">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, iure? Fuga,
+                                voluptates? Alias at, nobis dolor sunt quae expedita, harum cupiditate dolorem minima,
+                                inventore molestiae fugiat eum temporibus soluta perferendis!
+                                Deleniti nobis quasi ut, vero molestias officiis veniam placeat facere fugit praesentium
+                                quas quos cum adipisci unde voluptates! Rem illo soluta ratione minus, dolor excepturi
+                                odit at ab magnam sapiente?
+                                Officia rerum odio beatae ab eius sint sunt illum, recusandae illo totam nostrum facilis
+                                quae porro architecto magni, praesentium veritatis dolore eum necessitatibus ducimus
+                                culpa. Temporibus nobis assumenda iste veniam.
+                            </div>
+                            <p>
+                                <span>개인정보 수집 및 이용에 동의 하십니까?</span>
+                                <label for="privacy"><input type="checkbox" id="privacy" required>동의</label>
+                            </p>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <button type="submit" id="submit">회원가입</button>
+
+            </form>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="company">
+            <span>
+                자라홈코리아 유한회사 (Zara Home Korea Ltd.)|
+                서울시 강남구 영동대로 511 33층|
+                사업자 등록 번호:120-88-16920|
+                대표자:Lorena Mosquera|
+            </span>
+            <span>
+                연락처:080-500-6445 (수신자 부담 번호)|
+                이메일:info.kr@zarahome.com|
+                호스팅 서비스 제공업체:ITX Merken B.V.|
+                통신판매업신고:2018-서울강남-00458 |
+            </span>
+        </div>
+    </footer>
+
+
+    <script>
+        /* 서치박스 */
+    $('.search label').on('click', function () {
+        $(this).parent().toggleClass('on')
+    })
+
+    /* 스크롤 */
+    $(window).on('scroll', function () {
+        var sct = $(this).scrollTop()
+        if (sct > $(window).height() / 8) {
+            $('#header .top_menu').addClass('on')
+        } else {
+            $('#header .top_menu').removeClass('on')
+        }
+    })
+
+// 회원가입
+        $('#submit').on('click', function () {
+            let idbox = $('#id').val()
+            if (!idbox) {
+                alert('아이디를 입력하세요')
+                $('#id').focus().css({
+                    borderColor: '#f00'
+                })
+                return false
+            }
+
+            let pwcheck = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
+            let pwbox = $('#pw').val()
+            if (!pwbox) {
+                alert('비밀번호를 입력하세요')
+                $('#pw').focus().css({
+                    borderColor: '#f00'
+                })
+                return false
+            } else if (!pwcheck.test(pwbox)) {
+                alert('(최소 8자 이상) 문자, 숫자, 특수문자 각 1개 이상 포함하여 입력하시오')
+                $('#pw').focus().css({
+                    borderColor: '#f00'
+                }).val()
+                return false
+            }
+
+            let pwokbox = $('#pwok').val()
+            if (pwbox !== pwokbox) {
+                alert('비밀번호가 일치하지 않습니다')
+                $('#pwok').focus().css({
+                    borderColor: '#f00'
+                }).val('')
+                $('#pw').val('')
+                return false
+            }
+        })
+
+
+        $('#all').on('click', function () {
+            let check = $(this).prop('checked')
+            $('#use, #privacy').prop('checked', check)
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+@charset "uft-8";
+
+@media screen and (max-width:1024px) {
+  #section article h3 {
+    padding: 5px 5px;
+  }
+  #section .slide1 #figure video {object-fit: cover;}
+  .article1 .slide >img {object-fit: cover;}
+
+
+  /* 섹션 */
+  #section .article2, #section .article3, #section .article4 {
+    width: 90%; margin: 0 auto;
+  }
+
+  /* article1 */
+  .article1 .slidetext h2 {
+    font-size: 35px;
+    letter-spacing: 2px;
+  }
+  .article1 .slidetext p {
+    font-size: 20px;
+    letter-spacing: 3px;
+  }
+  .article1 .slide1 .slidetext p {
+    font-size: 15px;
+  }
+  .article1 .slick-dots >li button {height: 10px; width: 10px;}
+
+  /* article2 */
+  .article2 .story >div:first-child {
+    font-size: 15px;
+    padding: 20px 0 10px;
+  }
+
+  /* article3 */
+  .article3 .slick-dots >li {
+    width: 50px;
+  }
+  .article3 .slick-dots >li.slick-active button {
+    width: 50px; 
+  }
+
+  /* article4 */
+  .article4 .best .item:nth-child(1) {flex: 0 1 50%}
+  .article4 .best .item {flex: 0 1 25%; padding: 2px;}
+  .article4 .iteminfo {font-size: 12px;}
+  .article4 .iteminfo >p {padding: 0px 0;}
+  
+
+}
+
+
+
+@media screen and (max-width:768px) {
+
+  #header .top_menu {top:0px}
+
+    /* 섹션 */
+    #section article h3 {margin:80px 0 10px}
+
+  /* article1 */
+  .slide_g {margin-top: 100px;}
+  .article1 .slide {height: 85vh;}
+  .article1 .slide >img {min-height: 70%;}
+  .article1 .slide1 .slidetext p {display: none;}
+
+  /* article2 */
+  .article2 .story >div:first-child { padding: 20px 0 5px; font-size: 20px;}
+  .article2 .story >.img {flex-wrap: wrap; height: 80vh;}
+  .article2 .story >.img >div:nth-child(1), .article2 .story >.img >div:nth-child(3) {flex: 0;}
+  .article2 .story >.img >div {flex: 1 1 100%}
+
+  /* article3 */
+  .article3 .reciperow .recipe span {font-size: 25px;}
+
+  /* article4 */
+  .article4 .best .item:nth-child(1) {flex: 1 1 100%}
+  .article4 .best .item {flex: 0 1 50%}
+
+
+}
+
+
+@media screen and (max-width:480px) {
+  #section article h3 {margin:50px 0 10px}
+  /* article1 */
+  #section .slide p {display: none;}
+  #section .slide {height: 70vh;}
+
+  /* article2 */
+  .article2 .story >.img {height: 40vh;}
+
+  /* article3 */
+
+}

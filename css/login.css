@@ -1,0 +1,58 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+/* font-family: 'Open Sans', sans-serif; */
+
+
+body {font-family: 'Open Sans', sans-serif;}
+button, input {font-size: 14px;}
+
+#header {height: 100px; background: #000; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;}
+
+#loginwrap {
+  position: fixed; top: 20%; left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+#loginwrap h2 {
+  font-size: 50px; font-weight: bold; font-family: 'Mukta', sans-serif;
+  letter-spacing: 3px;
+  margin-bottom: 40px;
+}
+
+/* 로그인박스 js기능추가 */
+.loginbox {
+  width: 600px;
+  padding: 30px 10px;
+}
+.loginbox input{
+  width: 100%;
+  margin: 5px 0; padding: 15px;
+  border: 1px solid #ddd;
+}
+#id:focus, #pw:focus {outline: none; border:1px solid #000}
+
+.safelogin {display: flex; justify-content: flex-end;}
+#safe {width: 25px;}
+
+.loginbox button {
+  border: 1px solid #ddd; padding: 15px; width: 100%;
+  margin: 5px 0;
+}
+.loginbutton {background: #000; color: #fff;}
+.loginbutton:hover {background: rgb(143, 143, 143); color: #fff;}
+.beforeLogin {display: flex; justify-content: space-between;}
+.beforeLogin button {flex: 0 1 49.5%; margin-bottom: 50px;}
+.beforeLogin button:hover {background: #ddd; color: #000;}
+
+.snslogin {margin-top: 40px; display: flex;}
+.snslogin button {display: flex; align-items: center; line-height: 0; flex: 1 1 30%; border:none;  color:#fff; justify-content: center;}
+.snslogin .gg{background: #E1B80E; }
+.snslogin .fb {background: #1F449C;}
+.snslogin .nv {background: #00D038;}
+
+.snslogin span {padding-left: 8px;}
+.snslogin .gg i {font-size: 25px;}
+.snslogin .fb i {font-size: 28px; }
+.nv img {width: 25px;}
+/* .gg img {width: 29px;} */
+
